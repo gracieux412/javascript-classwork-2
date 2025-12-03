@@ -43,3 +43,58 @@ console.log(`${firstName[0].toUpperCase()}.${lastName[0].toUpperCase()}`);
 const middleName = "  joseph  ";
 console.log(middleName);
 console.log(middleName.trim());
+
+
+//--------------- end -------------------------------------------------//
+
+//================= 3rd December 2025 ==================================//
+
+let procurementTonnage = 2000;
+let minTonnage = 1000;
+
+const tonnageValidation = procurementTonnage >= minTonnage;
+console.log(tonnageValidation);
+
+//now trying to change the procurement tonnage value
+
+procurementTonnage =100;
+const tonnageValidation2 = procurementTonnage >= minTonnage;
+console.log(tonnageValidation2);
+
+
+//comparing cost as a string and as a number
+
+let costStr = '5000';
+let constNum = 5000;
+
+// Testing it now
+
+console.log(costStr == constNum);// bring true
+console.log(costStr === constNum); // bring false because one is a string and the other is a number
+
+if(costStr === constNum){
+    console.log("the numbers are the same");
+}else{
+    console.log("there are no matches in the expected number")
+}
+
+//for complex validation
+const dealerName2 = "Kitsa";
+const costUgx =10000;
+
+if(dealerName2.length >= 2 && costUgx >= 10000){
+    console.log("Right dealer");
+}else{
+    console.log(`Wrong Dealer ${dealerName2}`);
+}
+
+
+//date Logging
+
+const date = new Date(2025, 11, 3);  // 3rd December 2025
+
+const day = date.getDate();          // returns 3
+const month = date.getMonth() + 1;   // returns 12 (because months start at 0)
+const year = date.getFullYear();     // returns 2025
+
+console.log("Sales on: " + day + "/" + month + "/" + year);

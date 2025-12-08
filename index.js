@@ -98,3 +98,48 @@ const month = date.getMonth() + 1;   // returns 12 (because months start at 0)
 const year = date.getFullYear();     // returns 2025
 
 console.log("Sales on: " + day + "/" + month + "/" + year);
+
+
+
+//........................... 8th december 2025 .............exercise on loops...............................
+
+let dailyProcurement = [1200, 850, 1000, 900];
+
+let sum =0;
+let average=0;
+for(let index=0; index<dailyProcurement.length; index++){
+    sum += dailyProcurement[index];
+        average=sum/dailyProcurement.length;
+   
+}
+console.log(average)
+
+//trying to check the length of the array
+console.log(dailyProcurement.length)
+
+//............ 
+//creating an array for credit check
+
+let creditStatus = ['paid','due','paid','due'];
+
+for(let items of creditStatus){
+    if(items ==='paid'){
+        continue;
+        
+    }console.log(items)
+}
+
+//................
+//Manager alert
+
+let beanQuantity = 10;
+
+while(true){
+    if(beanQuantity>0){
+        console.log("Beans available: ", beanQuantity);
+        beanQuantity --;
+    }else if(beanQuantity === 0){
+        console.log(`manager: Beans are now out of stock`);
+        break;
+    }
+}
